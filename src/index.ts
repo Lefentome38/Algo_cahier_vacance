@@ -1,9 +1,15 @@
 import {exo1} from './exo1';
 import {exo_cahier_1} from './exo_cahier_1';
 import {exo_cahier_2} from './exo_cahier_2';
+import {fizz_buzz} from './fizz_buzz';
+import {Mike_Keith} from './Mike_Keith';
+import {MAX_3_valeurs} from './MAX_3_valeurs';
 // exo1();
 // exo_cahier_1();
-exo_cahier_2();
+// exo_cahier_2();
+// fizz_buzz();
+// Mike_Keith();
+MAX_3_valeurs();
 
 
 
