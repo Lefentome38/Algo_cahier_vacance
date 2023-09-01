@@ -1,12 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const MAX_3_valeurs_1 = require("./MAX_3_valeurs");
+const exo_cahier_3_1 = require("./exo_cahier_3");
 // exo1();
 // exo_cahier_1();
 // exo_cahier_2();
+(0, exo_cahier_3_1.exo_cahier_3)();
 // fizz_buzz();
 // Mike_Keith();
-(0, MAX_3_valeurs_1.MAX_3_valeurs)();
+// MAX_3_valeurs();
 // function getAllDiceCombinations(dices: any[]) {
 //   const toCombine = new Array(dices.length).fill("").map((_, i) => i)
 //   let combinations: any[] = []

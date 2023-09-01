@@ -3,16 +3,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.exo_cahier_2 = void 0;
 const exo_cahier_2 = () => {
     console.log('start');
-    let tableu_pali = ['hello', 'kayak', 'tata', 'elle', 'radar'];
-    console.log(tableu_pali);
-    palidrome(tableu_pali);
+    let tableu_pali = ['hello', 'kayak', 'tata', 'elle', 'radar', 'itti', 'ok'];
+    console.log(JSON.stringify(tableu_pali));
+    let resulta = tableu_pali.map(palidrome);
+    console.log(JSON.stringify(resulta));
     function palidrome(tableu_pali) {
         for (let i = 0; i < tableu_pali.length; i++) {
             if (tableu_pali.split('').reverse().join('') === tableu_pali) {
-                console.log('oui');
+                return true;
             }
             else {
-                console.log('non');
+                return false;
             }
         }
     }

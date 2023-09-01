@@ -4,18 +4,20 @@ import { reverse } from "dns";
 export const exo_cahier_2 = () => {
     console.log('start');
 
-    let tableu_pali:string[] = ['hello','kayak','tata','elle','radar'];
-    console.log(tableu_pali);
+    let tableu_pali:string[] = ['hello','kayak','tata','elle','radar','itti','ok'];
+    console.log(JSON.stringify(tableu_pali));
 
-    palidrome(tableu_pali)
+    let resulta = tableu_pali.map(palidrome)
+    console.log(JSON.stringify(resulta));
+    
 
     function palidrome(tableu_pali: string){
         for (let i = 0; i < tableu_pali.length; i++) {
             if (tableu_pali.split('').reverse().join('') === tableu_pali) {
-                console.log('oui');
+                return true
              }
              else{
-                 console.log('non');              
+                return false
              }
         }
     }
